@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == 11) {
+        if (requestCode == ACTIVITY_REQUEST_SELECT_PHOTO) {
             if (resultCode == RESULT_OK) { // 判断是否成功。
                 // 拿到用户选择的图片路径List：
                 List<String> pathList = Album.parseResult(data);
